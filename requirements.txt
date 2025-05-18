@@ -16,6 +16,7 @@ pluggy==1.6.0
 pydantic==2.11.4
 pydantic_core==2.33.2
 pytest==8.3.5
+pytest-asyncio==0.26.0
 redis==6.1.0
 routers==0.10.1
 setuptools==80.7.1
