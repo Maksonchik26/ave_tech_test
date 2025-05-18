@@ -1,5 +1,7 @@
-import redis
+from redis.asyncio.client import Redis
+
+r: Redis = Redis(host='localhost', port=6379, decode_responses=True)
 
 
-# Redis client (можно также обернуть в async, но для простоты используем sync)
-r = redis.Redis(host='localhost', port=6379, decode_responses=True)
+async def get_redis() -> Redis:
+    return r
