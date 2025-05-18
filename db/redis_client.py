@@ -1,6 +1,11 @@
+import os
+
 from redis.asyncio.client import Redis
 
-r: Redis = Redis(host='localhost', port=6379, decode_responses=True)
+REDIS_HOST = os.getenv("REDIS_HOST", "redis")
+REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
+
+r: Redis = Redis(host=REDIS_HOST, port=REDIS_PORT, decode_responses=True)
 
 
 async def get_redis() -> Redis:
