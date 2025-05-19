@@ -1,7 +1,7 @@
-from schemas.addresses import AddressIn, AddressOut
+from app.schemas.addresses import AddressIn, AddressOut
 from fastapi import HTTPException
 
-from crud.common import CRUD
+from app.crud.common import CRUD
 
 
 class AddressCRUD(CRUD):

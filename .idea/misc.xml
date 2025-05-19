@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (ave_tech_proj)" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (ave_tech_test)" project-jdk-type="Python SDK" />
 </project>

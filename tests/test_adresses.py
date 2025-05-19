@@ -3,8 +3,8 @@ from httpx import AsyncClient
 from httpx import ASGITransport
 from fakeredis.aioredis import FakeRedis
 
-from main import app
-from db.redis_client import get_redis
+from app.main import app
+from app.db.redis_client import get_redis
 
 
 @pytest.mark.asyncio

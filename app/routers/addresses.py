@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query, Depends, status
 
-from crud.addresses import AddressCRUD
-from schemas.addresses import AddressIn, AddressOut
+from app.crud.addresses import AddressCRUD
+from app.schemas.addresses import AddressIn, AddressOut
 
 
 router = APIRouter(

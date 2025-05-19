@@ -1,7 +1,7 @@
 from fastapi import Depends
 from redis.asyncio.client import Redis
 
-from db.redis_client import get_redis
+from app.db.redis_client import get_redis
 
 
 class CRUD:
