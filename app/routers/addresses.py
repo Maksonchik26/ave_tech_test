@@ -44,7 +44,7 @@ async def write_data(
     }
 )
 async def check_data(
-    phone: str = Query(..., min_length=10, max_length=15),
+    phone: str,
     addresses_crud: AddressCRUD = Depends(),
 ):
     address = await addresses_crud.read(phone)
